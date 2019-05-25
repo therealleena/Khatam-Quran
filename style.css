@@ -1,0 +1,23 @@
+.firstsection{
+    /* text-align: center; */
+    height:100vh;
+    padding: 15em;
+}
+
+.secondsection{
+ /* text-align: center; */
+ height:100vh;
+ padding: 15em;
+ 
+}
+
+.thirdsection{
+    /* text-align: center; */
+    height:100vh;
+    padding: 15em;
+   
+   }
+
+   html {
+    scroll-behavior: smooth;
+  }

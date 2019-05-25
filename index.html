@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Katam Al-Quran</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#firstsection">Home</a></li>
+        <li><a href="#secondsection"> By page</a></li>
+        <li><a href="#thirdsection"> By day</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="firstsection center-align red lighten-4" id="firstsection">
+    <h1>Khatam calculator</h1>
+    <h5> This is a simple web app that helps you gauge how long it will take for you to khatam the Quran</h5>
+    <a href="#secondsection" class="waves-effect waves-light btn-large  red lighten-2"><i class="material-icons left">cloud</i>By page</a>
+    <a href="#thirdsection" class="waves-effect waves-light btn-large  red lighten-2"><i class="material-icons right">cloud</i>By day</a>
+
+
+  </div>
+  <div class="secondsection  center-align red lighten-5 " id="secondsection">
+    <h2> By page</h2>
+    <h5>Find out how many days it would take you to khatam the Quran</h5>
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="number" id="textarea1"/>
+            <label for="textarea1"></label>
+            <button id="calculate" onclick="calculateDaysNeeded()" class="btn waves-effect waves-light" type="submit" name="action">Calculate
+              <i class="material-icons right">send</i>
+            </button>
+
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="row">
+      <div class="col s12 m12">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+
+            <p id="audi">Your results will display here after you click the 'Calculate' button.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div>
+    <div class="thirdsection  center-align red lighten-5 " id="thirdsection">
+      <h2> By day</h2>
+      <h5>Find out how many pages you need to read daily by specifying how many days you hope to khatam by.</h5>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea2" class="materialize-textarea"></textarea>
+              <label  for="textarea2"></label>
+              <button onclick=calculateDay() class="btn waves-effect waves-light" type="submit" name="action">Calculate
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+
+              <p id="mercedes">Your results will display here after you click the 'Calculate' button.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">About App</h5>
+            <p class="grey-text text-lighten-4">This is a coding project that was done during a Code Hero session to gauge how long it will take for one to khatam the Quran.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="https://therealleena.github.io/door-toggle/" class="list-group-item list-group-item-action">Toggle door</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://therealleena.github.io/grade-calculator/" class="list-group-item list-group-item-action">GRade calculator</li>
+              <li><a class="grey-text text-lighten-3" href="https://therealleena.github.io/calculator/" class="list-group-item list-group-item-action">BAsic calculator</li>
+              <li><a class="grey-text text-lighten-3" href=</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2019 Code Hero Projects by fheuche
+        <a class="grey-text text-lighten-4 right" href="https://github.com/therealleena">My Github</a>
+        </div>
+      </div>
+    </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="main.js"></script>
+
+
+</body>
+
+</html>
